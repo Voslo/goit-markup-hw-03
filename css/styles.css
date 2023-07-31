@@ -1,0 +1,240 @@
+:root{
+    --slate:#434455;
+    --cloud: #F4F4FD;
+    --navyblue:#2E2F42;
+    --iris:#4D5AE5;
+    --white:#FFFFFF;
+    --ocean:#404BBF;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 400;
+    color:var(--slate);
+    background-color: var(--white);
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+}
+button{
+    cursor: pointer;
+    color: var(--iris);
+    background-color: var(--cloud);
+}
+button:hover,
+button:focus{
+    color: var(--white);
+    background-color: var(--ocean);
+}
+
+ul{
+    list-style-type: none;
+}
+h1{
+    color: var(--white);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02px;
+}
+/* Nav */
+/* Logo */
+.link{
+    text-decoration: none;
+    color: var(--iris);
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.link:focus,
+.link:hover{
+    color:var(--ocean);
+
+}
+.link-span{
+    color: var(--navyblue);
+}
+.list{
+    list-style: none;
+}
+.list-studio{
+    color: var(--navyblue);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.link-studio{
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
+}
+.link-portfolio{
+    text-decoration: none;
+    color: var(--navyblue);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.link-portfolio:focus,
+.link-portfolio:hover {
+    color: var(--ocean);
+}
+.link-address{
+    font-style: normal;
+}
+.list-studio:focus,
+.list-studio:hover{
+    color:var(--ocean);
+}
+.link-address{
+font-style: normal;
+}
+.link-contacts{
+    font-family: 'Roboto',sans-serif;
+    text-transform: none;
+    color: var(--slate);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.link-contacts:focus,
+.link-contacts:hover{
+    color:var(--ocean);
+}
+/* Hero section */
+.hero {
+    background-color:var(--navyblue);
+}
+.button-order{
+    background-color: var(--iris);
+    color:var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto',sans-serif;
+}
+.list-button {
+    background-color: var(--cloud);
+    color: var(--iris);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto',sans-serif;
+}
+
+.list-button:hover,
+.list-button:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+    cursor: pointer;
+}
+/* Advant section */
+.advantages-text{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.advantages-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
+}
+/* work section */
+.work{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue);
+}
+
+.work-type{
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue);
+}
+
+.work-class{
+    font-family: 'Roboto', sans-serif;
+    text-transform: none;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+/* Section team */
+.section-team{
+background-color: var(--cloud);
+}
+.team{
+    color: var(--navyblue);
+}
+.team-item{
+    background-color: var(--white);
+}
+.team-human{
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.team-text{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+/* footer */
+.foot{
+    background-color:var(--navyblue);
+}
+.footer-text {
+    color: var(--cloud);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.foot-span{
+    color: var(--cloud);
+}
+
