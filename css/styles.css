@@ -5,6 +5,7 @@
     --iris:#4D5AE5;
     --white:#FFFFFF;
     --ocean:#404BBF;
+    --cornflower:#E7E9FC;
 }
 body{
     font-family: 'Roboto',sans-serif;
@@ -14,11 +15,13 @@ body{
     font-size: 16px;
     line-height: 1.5; 
     letter-spacing: 0.02em;
+    padding: 0;
 }
 button{
     cursor: pointer;
     color: var(--iris);
     background-color: var(--cloud);
+
 }
 button:hover,
 button:focus{
@@ -28,6 +31,18 @@ button:focus{
 
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
 }
 h1{
     color: var(--white);
@@ -36,6 +51,10 @@ h1{
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 h2{
     text-align: center;
@@ -52,8 +71,51 @@ h3{
     line-height: 1.2;
     letter-spacing: 0.02px;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-nav{
+    display: inline-flex;
+}
+.page-head .container{
+    display: flex;
+    margin-left: 156px;
+}
 /* Nav */
 /* Logo */
+.page-nav .link{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+}
+.page-nav .list{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap:40px;
+    margin-left: 76px;
+    
+}
 .link{
     text-decoration: none;
     color: var(--iris);
@@ -63,6 +125,7 @@ h3{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 .link:focus,
 .link:hover{
@@ -71,9 +134,12 @@ h3{
 }
 .link-span{
     color: var(--navyblue);
+
 }
 .list{
     list-style: none;
+    display: flex;
+    gap: 24px;
 }
 .list-studio{
     color: var(--navyblue);
@@ -105,13 +171,14 @@ h3{
 }
 .link-address{
     font-style: normal;
+    display: inline-flex;
+    margin-left: 332px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 .list-studio:focus,
 .list-studio:hover{
     color:var(--ocean);
-}
-.link-address{
-font-style: normal;
 }
 .link-contacts{
     font-family: 'Roboto',sans-serif;
@@ -126,10 +193,14 @@ font-style: normal;
 .link-contacts:hover{
     color:var(--ocean);
 }
+
 /* Hero section */
 .hero {
     background-color:var(--navyblue);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
+
 .button-order{
     background-color: var(--iris);
     color:var(--white);
@@ -137,8 +208,15 @@ font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto',sans-serif;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
+
+/* Portfolio */
 .list-button {
     background-color: var(--cloud);
     color: var(--iris);
@@ -147,15 +225,45 @@ font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-family: 'Roboto',sans-serif;
+    padding: 12px 24px;
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    margin-bottom: 72px;
 }
-
+.list.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .list-button:hover,
 .list-button:focus {
     color: var(--white);
     background-color: var(--ocean);
     cursor: pointer;
 }
+/* Portfolio list */
+.list.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1158px;
+    flex-shrink: 0;
+}
+.section-portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 /* Advant section */
+.section-advantages{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.advantages-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 264px;
+    gap: 24px;
+}
 .advantages-text{
     font-size: 16px;
     font-style: normal;
@@ -169,8 +277,13 @@ font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue);
+    margin-bottom: 8px;
 }
 /* work section */
+.section-work{
+    padding-bottom: 72px;
+    padding-bottom: 120px;
+}
 .work{
     text-align: center;
     font-size: 36px;
@@ -179,7 +292,14 @@ font-style: normal;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--navyblue);
+    margin-bottom: 72px;
 }
+.work-item{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* work portfolio */
 
 .work-type{
     font-family: 'Roboto', sans-serif;
@@ -189,8 +309,14 @@ font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue);
+    margin-left: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+    margin-top: 32px;
 }
-
+.portfolio-item{
+    border: 1px solid var(--cornflower);
+}
 .work-class{
     font-family: 'Roboto', sans-serif;
     text-transform: none;
@@ -199,16 +325,21 @@ font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+    margin-left: 16px;
+    margin-bottom: 32px;
 }
 /* Section team */
 .section-team{
 background-color: var(--cloud);
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .team{
     color: var(--navyblue);
 }
 .team-item{
     background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-human{
     color: var(--navyblue);
@@ -216,6 +347,7 @@ background-color: var(--cloud);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
 }
 .team-text{
     font-size: 16px;
@@ -224,16 +356,22 @@ background-color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+    text-align: center;
 }
 /* footer */
 .foot{
     background-color:var(--navyblue);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-text {
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
 }
+
 .foot-span{
     color: var(--cloud);
 }
