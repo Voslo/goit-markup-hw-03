@@ -179,8 +179,14 @@ img{
 .list-studio:hover{
     color:var(--ocean);
 }
-.link-address.list{
-gap: 40px;
+.list-nav{
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+}
+.list-nav-address{
+    display: flex;
+    gap: 40px;
 }
 .link-contacts{
     font-family: 'Roboto',sans-serif;
@@ -276,7 +282,6 @@ gap: 40px;
     align-items: flex-start;
     width: calc((100% - 3 * 24px) / 4);
     gap: 24px;
-
 }
 .advantages-text{
     font-size: 16px;
