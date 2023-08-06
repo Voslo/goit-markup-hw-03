@@ -172,10 +172,9 @@ img{
 }
 .link-address{
     font-style: normal;
-    display: inline-flex;
+    display: flex;
     margin-left: 332px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding: 24px 0;
 }
 .list-studio:focus,
 .list-studio:hover{
@@ -282,7 +281,7 @@ img{
     flex-direction: column;
     align-items: flex-start;
     width: calc((100% - 3 * 24px) / 4);
-    gap: 24px;
+    gap: 8px;
 }
 .advantages-text{
     font-size: 16px;
